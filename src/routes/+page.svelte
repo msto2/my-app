@@ -7,19 +7,36 @@
   <section class="highlights">
     <a class="highlight" href="/weddings">
       <h2>Weddings</h2>
-      <p>Cinematic storytelling</p>
+      <p>Cinematic Storytelling</p>
       <img src="\images\weddings\chris wed 200.jpg">
     </a>
     <a class="highlight" href="/sports">
       <h2>Sports</h2>
-      <p>In the game action</p>
+      <p>In-Game Action</p>
       <img src="/images/sports/img4.jpg">
     </a>
     <a class="highlight" href="/freelance">
       <h2>Freelance</h2>
-      <p>Versatile, creative work</p>
+      <p>Versatile, Creative Work</p>
       <img src="\images\freelance\img3.jpg">
     </a>
+  </section>
+  <!-- Contact Information -->
+  <section class="mt-20">
+    <h2 class="text-2xl font-semibold mb-6 text-[var(--accent)] text-center">Get In Touch</h2>
+    <div class="highlight rounded-lg transition-all text-center">
+      <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+      <div class="space-y-4">
+        <div>
+          <h4 class="font-semibold text-[var(--text)] mb-2">Phone Numbers</h4>
+          <p class="text-[var(--muted)]">724-378-3236 & 412-759-3311</p>
+        </div>
+        <div class="mt-4">
+          <h4 class="font-semibold text-[var(--text)] mb-2">Email</h4>
+          <p class="text-[var(--muted)]">LarryStokesPhotos@yahoo.com</p>
+        </div>
+      </div>
+    </div>
   </section>
 </main>
 
@@ -114,7 +131,6 @@
   }
 
   .highlight {
-    max-width: 90%;
     text-align: center;
   }
 

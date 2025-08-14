@@ -6,7 +6,8 @@ import { imagetools } from 'vite-imagetools';
 export default defineConfig({
 	server: {
 		host: true, 
-		port: 5173         
+		port: 5174,
+		allowedHosts: ['larrystokes.com']         
 	},
 	plugins: [tailwindcss(), sveltekit(), imagetools()],
 	test: {
