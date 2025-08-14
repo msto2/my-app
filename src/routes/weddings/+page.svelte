@@ -2,9 +2,13 @@
   import { onMount, onDestroy } from 'svelte';
 
   let images = [
-    "/images/weddings/chris wed 200.jpg", "/images/weddings/chris wed 380.jpg", "/images/weddings/chris wed 381.jpg",
-     "/images/weddings/chris wed 406.jpg", "/images/weddings/chris wed 409.jpg", "/images/weddings/chris wed 414.jpg",
-      "/images/weddings/chris wed 463.jpg", "/images/weddings/chris wed 653.jpg",
+    "/images/weddings/CM4H1939.JPG", "/images/weddings/CM4H1958.JPG", "/images/weddings/CM4H2006.JPG",
+    "/images/weddings/CM4H2007.JPG", "/images/weddings/CM4H2008.JPG", "/images/weddings/CM4H8793.JPG",
+    "/images/weddings/IMG_3316.JPG", "/images/weddings/IMG_3348.JPG", "/images/weddings/IMG_3385.JPG",
+    "/images/weddings/IMG_3401.JPG", "/images/weddings/IMG_3488.JPG", "/images/weddings/IMG_3503.JPG",
+    "/images/weddings/IMG_3806.JPG", "/images/weddings/chris wed 200.jpg", "/images/weddings/chris wed 380.jpg",
+    "/images/weddings/chris wed 381.jpg", "/images/weddings/chris wed 406.jpg", "/images/weddings/chris wed 409.jpg",
+    "/images/weddings/chris wed 414.jpg", "/images/weddings/chris wed 463.jpg", "/images/weddings/chris wed 653.jpg"
   ];
 
   let track; // The DOM element that scrolls horizontally
