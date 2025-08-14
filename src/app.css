@@ -1,0 +1,103 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+:root {
+  --bg: #121212;
+  --text: #ffffff;
+  --muted: #cccccc;
+  --accent: #f2545b;
+  --hover: #ff7b7b;
+  --card: #1c1c1c;
+
+  /* New nav-specific colors */
+  --nav-bg: rgba(242, 84, 91, 0.7);  /* semi-transparent accent */
+  --nav-text: var(--text);
+  --nav-hover: var(--hover);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.hero h1 {
+  color: var(--accent);
+}
+
+.hero p {
+  color: var(--muted);
+}
+
+.highlight {
+  background: var(--card);
+  color: var(--text);
+}
+
+.highlight h2 {
+  color: var(--accent);
+}
+
+.highlight p {
+  color: var(--muted);
+}
+
+.highlight:hover {
+  box-shadow: 0 6px 20px rgba(230, 57, 70, 0.3);
+  transform: translateY(-4px);
+}
+
+.highlight a {
+  color: var(--accent);
+}
+
+.highlight:hover a {
+  color: var(--hover);
+}
+
+    .carousel-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .track {
+    display: flex;
+    gap: 4vmin;
+    overflow-x: scroll;
+    scroll-behavior: auto;
+    scrollbar-width: none;
+  }
+
+  .track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .image-wrapper {
+    flex: 0 0 auto;
+    width: 50vmin;
+    height: 56vmin;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100% center;
+    transition: object-position 0s linear;
+    pointer-events: none;
+    user-select: none;
+  }
+
+@media (orientation: portrait) {
+    .image-wrapper {
+      width: 60vmin;
+      height: 100vmin;
+    }
+    .play-button{
+      visibility: hidden;
+    }
+  }
