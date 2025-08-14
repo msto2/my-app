@@ -174,7 +174,7 @@
   <div bind:this={track} class="track">
     {#each images as img (img)}
       <div class="image-wrapper">
-        <img src={img} alt="" draggable="false" />
+        <img src={img} alt="Wedding photography" loading="lazy" draggable="false" />
       </div>
     {/each}
   </div>

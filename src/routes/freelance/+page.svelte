@@ -3,7 +3,10 @@
 
   let images = [
     "/images/freelance/img1.jpg", "/images/freelance/img2.jpg", "/images/freelance/img3.jpg",
-    "/images/freelance/img4.jpg", "/images/freelance/img5.jpg", "/images/freelance/img6.jpg"
+    "/images/freelance/img4.jpg", "/images/freelance/img5.jpg", "/images/freelance/img6.jpg",
+    "/images/freelance/A03I8063.JPG", "/images/freelance/B42Q3197.JPG", 
+    "/images/freelance/B42Q3200.JPG", "/images/freelance/B42Q3206.JPG",
+    "/images/freelance/signal-2024-12-19-15-05-51-346-2.jpg", "/images/freelance/signal-2024-12-24-12-11-29-229-6.jpg"
   ];
 
   let track; // The DOM element that scrolls horizontally
@@ -170,7 +173,7 @@
   <div bind:this={track} class="track">
     {#each images as img (img)}
       <div class="image-wrapper">
-        <img src={img} alt="" draggable="false" />
+        <img src={img} alt="Freelance photography" loading="lazy" draggable="false" />
       </div>
     {/each}
   </div>

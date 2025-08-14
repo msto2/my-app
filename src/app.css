@@ -68,6 +68,9 @@ body {
     overflow-x: scroll;
     scroll-behavior: auto;
     scrollbar-width: none;
+    /* Performance optimizations */
+    contain: layout style paint;
+    will-change: scroll-position;
   }
 
   .track::-webkit-scrollbar {
@@ -90,6 +93,10 @@ body {
     transition: object-position 0s linear;
     pointer-events: none;
     user-select: none;
+    /* Performance optimizations */
+    will-change: object-position;
+    backface-visibility: hidden;
+    transform: translateZ(0);
   }
 
 @media (orientation: portrait) {

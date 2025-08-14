@@ -3,7 +3,6 @@
 
   function toggleMenu() {
     menuOpen = !menuOpen;
-    document.body.classList.toggle('menu-open', menuOpen);
     
     const pageContainer = document.getElementById('page-container');
     if (pageContainer) {
@@ -32,7 +31,8 @@
     <li><a href="/sports" on:click={() => toggleMenu()}>Sports</a></li>
     <li><a href="/weddings" on:click={() => toggleMenu()}>Weddings</a></li>
     <li><a href="/freelance" on:click={() => toggleMenu()}>Free&nbsp;Lance</a></li>
-    <li><a href="/contact" on:click={() => toggleMenu()}>Contact</a></li>
+    <li><a href="/services" on:click={() => toggleMenu()}>Services</a></li>
+    <li><a href="/about" on:click={() => toggleMenu()}>About</a></li>
   </ul>
 </nav>
 <style>
@@ -85,10 +85,10 @@
   bottom: -45vh;
   left: 0;
   width: 100%;
-  height: 30vh;
+  height: 32vh;
   background-color: var(--card);
   border-top: 2px solid var(--accent);
-  padding: 0 0 2rem 0;
+  padding: 0 0 2.75rem 0;
   text-align: center;
   z-index: 1100; /* Above toggle so it pushes it up */
   box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.3);
@@ -102,10 +102,6 @@
   bottom: 0;
 }
 
-/* Prevent body scroll when menu is open */
-:global(body.menu-open) {
-  overflow: hidden;
-}
 
 #menu ul {
   list-style: none;
@@ -114,7 +110,7 @@
 }
 
 #menu li {
-  margin: 0.25rem 0;
+  margin: 0.15rem 0;
 }
 
 #menu li a {

@@ -3,12 +3,12 @@
 </script>
 
 <section class="max-w-3xl mx-auto px-6 py-20 font-sans">
-  <h1 class="text-4xl font-bold mb-4 text-[var(--accent)] text-center">Photography Services Menu</h1>
+  <h1 class="text-4xl font-bold mb-4 text-[var(--accent)] text-center">Photography Packages</h1>
   <p class="mb-10 text-[var(--muted)] text-center">Serving the Greater Pittsburgh Area</p>
 
   <!-- Wedding Packages -->
   <section class="mb-16">
-    <h2 class="text-2xl font-semibold mb-6 text-[var(--accent)] text-center">Wedding Packages</h2>
+    <h2 class="text-2xl font-semibold mb-6 text-[var(--accent)] text-center">Weddings</h2>
 
     <div class="highlight p-6 rounded-lg mb-6 transition-all">
       <h3 class="text-xl font-bold mb-2">1. Basic Wedding Package – <span class="text-[var(--muted)]">$1,000</span></h3>
@@ -48,7 +48,7 @@
 
   <!-- Freelance -->
   <section class="mb-16">
-    <h2 class="text-2xl font-semibold mb-2 text-[var(--accent)] text-center">Freelance Photography<span class="text-[var(--muted)]"></span></h2>
+    <h2 class="text-2xl font-semibold mb-2 text-[var(--accent)] text-center">Freelance<span class="text-[var(--muted)]"></span></h2>
     <p class="mb-6 text-[var(--muted)] text-center">2-hour minimum required</p>
     <div class="highlight p-6 rounded-lg mb-6 transition-all">
         <h3 class="text-xl font-bold mb-2">Versatile Sessions for Any Occasion – <span class="text-[var(--muted)]">$150 per hour</span></h3>
@@ -64,7 +64,7 @@
 
   <!-- Sports -->
   <section>
-    <h2 class="text-2xl font-semibold mb-2 text-[var(--accent)] text-center">Sports Photography</h2>
+    <h2 class="text-2xl font-semibold mb-2 text-[var(--accent)] text-center">Sports</h2>
     <p class="mb-6 text-[var(--muted)] text-center">Perfect for youth sports, high school athletics, and amateur leagues.</p>
 
     <div class="highlight p-6 rounded-lg mb-6 transition-all">

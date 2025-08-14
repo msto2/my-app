@@ -13,10 +13,10 @@
     "/images/img32.jpg", "/images/img33.jpg", "/images/img34.jpg", "/images/img35.jpg",
     "/images/img36.jpg", "/images/img37.jpg", "/images/img38.jpg", "/images/sports/img1.jpg", 
     "/images/sports/img2.jpg", "/images/sports/img3.jpg", "/images/sports/img4.jpg", "/images/sports/img5.jpg",
-    "/images/sports/img6.jpg", "/images/sports/img7.jpg",
-    "/images/sports/img8.jpg", "/images/sports/img9.jpg", "/images/sports/img10.jpg", "/images/sports/img11.jpg",
-    "/images/sports/img12.jpg", "/images/sports/img13.jpg", "/images/sports/img14.jpg", "/images/sports/img15.jpg",
-    "/images/sports/img16.jpg", "/images/sports/img17.jpg", "/images/sports/img18.jpg", "/images/sports/img19.jpg"
+    "/images/sports/img6.jpg", "/images/sports/img7.jpg", "/images/sports/img8.jpg", "/images/sports/img9.jpg",
+    "/images/sports/img10.jpg", "/images/sports/img11.jpg", "/images/sports/img12.jpg", "/images/sports/img13.jpg",
+    "/images/sports/img14.jpg", "/images/sports/img15.jpg", "/images/sports/img16.jpg", "/images/sports/img17.jpg",
+    "/images/sports/img18.jpg", "/images/sports/img19.jpg", "/images/sports/CM4H9468.JPG"
   ];
 
   let track; // The DOM element that scrolls horizontally
@@ -182,7 +182,7 @@
   <div bind:this={track} class="track">
     {#each images as img (img)}
       <div class="image-wrapper">
-        <img src={img} alt="" draggable="false" />
+        <img src={img} alt="Sports photography" loading="lazy" draggable="false" />
       </div>
     {/each}
   </div>

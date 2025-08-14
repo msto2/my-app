@@ -6,7 +6,7 @@
       <li><a href="/sports">Sports</a></li>
       <li><a href="/weddings">Weddings</a></li>
       <li><a href="/freelance">Free&nbsp;Lance</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><a href="/services">Services</a></li>
     </ul>
   </div>
 </nav>
