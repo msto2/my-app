@@ -1,18 +1,10 @@
 <script>
   import { onMount, onDestroy } from 'svelte';
 
-  import weddingImg1 from '/images/weddings/chris wed 200.jpg?w=800&format=webp';
-  import weddingImg2 from '/images/weddings/chris wed 380.jpg?w=800&format=webp';
-  import weddingImg3 from '/images/weddings/chris wed 381.jpg?w=800&format=webp';
-  import weddingImg4 from '/images/weddings/chris wed 406.jpg?w=800&format=webp';
-  import weddingImg5 from '/images/weddings/chris wed 409.jpg?w=800&format=webp';
-  import weddingImg6 from '/images/weddings/chris wed 414.jpg?w=800&format=webp';
-  import weddingImg7 from '/images/weddings/chris wed 463.jpg?w=800&format=webp';
-  import weddingImg8 from '/images/weddings/chris wed 653.jpg?w=800&format=webp';
-
   let images = [
-    weddingImg1, weddingImg2, weddingImg3, weddingImg4,
-    weddingImg5, weddingImg6, weddingImg7, weddingImg8
+    "/images/weddings/chris wed 200.jpg", "/images/weddings/chris wed 380.jpg", "/images/weddings/chris wed 381.jpg",
+     "/images/weddings/chris wed 406.jpg", "/images/weddings/chris wed 409.jpg", "/images/weddings/chris wed 414.jpg",
+      "/images/weddings/chris wed 463.jpg", "/images/weddings/chris wed 653.jpg",
   ];
 
   let track; // The DOM element that scrolls horizontally

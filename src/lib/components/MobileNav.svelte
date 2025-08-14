@@ -4,6 +4,16 @@
   function toggleMenu() {
     menuOpen = !menuOpen;
     document.body.classList.toggle('menu-open', menuOpen);
+    
+    const pageContainer = document.getElementById('page-container');
+    if (pageContainer) {
+      if (menuOpen) {
+        pageContainer.style.transform = 'translateY(-30vh)';
+        pageContainer.style.transition = 'transform 0.3s ease';
+      } else {
+        pageContainer.style.transform = 'translateY(0)';
+      }
+    }
   }
 </script>
 
@@ -37,10 +47,10 @@
 
 .mobile-nav-wrapper {
   position: fixed;
-  bottom: 1vmin;
+  bottom: 0.1vmin;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1100;
+  z-index: 1101;
 }
 
 #toggle {
@@ -72,21 +82,29 @@
 /* Full-width bottom nav */
 #menu {
   position: fixed;
-  bottom: 0;
+  bottom: -45vh;
   left: 0;
   width: 100%;
+  height: 30vh;
   background-color: var(--card);
   border-top: 2px solid var(--accent);
-  padding: 1rem 0.5rem;
+  padding: 0 0 2rem 0;
   text-align: center;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
-  z-index: 1000; /* Below toggle */
+  z-index: 1100; /* Above toggle so it pushes it up */
   box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: bottom 0.3s ease;
 }
 
 #menu.open {
-  transform: translateY(0%);
+  bottom: 0;
+}
+
+/* Prevent body scroll when menu is open */
+:global(body.menu-open) {
+  overflow: hidden;
 }
 
 #menu ul {
@@ -96,7 +114,7 @@
 }
 
 #menu li {
-  margin: 0.5rem 0;
+  margin: 0.25rem 0;
 }
 
 #menu li a {

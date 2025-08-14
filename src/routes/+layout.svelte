@@ -9,9 +9,9 @@
 
 
 <Nav />
-<div class="page-container">
+<div class="page-container" id="page-container">
 {@render children()}
-<MobileNav />
 </div>
+<MobileNav />
 <!-- <Test /> -->
 

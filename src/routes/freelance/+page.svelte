@@ -1,16 +1,9 @@
 <script>
   import { onMount, onDestroy } from 'svelte';
 
-  import freelanceImg1 from '/images/freelance/img1.jpg?w=800&format=webp';
-  import freelanceImg2 from '/images/freelance/img2.jpg?w=800&format=webp';
-  import freelanceImg3 from '/images/freelance/img3.jpg?w=800&format=webp';
-  import freelanceImg4 from '/images/freelance/img4.jpg?w=800&format=webp';
-  import freelanceImg5 from '/images/freelance/img5.jpg?w=800&format=webp';
-  import freelanceImg6 from '/images/freelance/img6.jpg?w=800&format=webp';
-
   let images = [
-    freelanceImg1, freelanceImg2, freelanceImg3,
-    freelanceImg4, freelanceImg5, freelanceImg6
+    "/images/freelance/img1.jpg", "/images/freelance/img2.jpg", "/images/freelance/img3.jpg",
+    "/images/freelance/img4.jpg", "/images/freelance/img5.jpg", "/images/freelance/img6.jpg"
   ];
 
   let track; // The DOM element that scrolls horizontally
