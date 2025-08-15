@@ -30,7 +30,7 @@
     <li><a href="/" on:click={() => toggleMenu()}>Home</a></li>
     <li><a href="/sports" on:click={() => toggleMenu()}>Sports</a></li>
     <li><a href="/weddings" on:click={() => toggleMenu()}>Weddings</a></li>
-    <li><a href="/freelance" on:click={() => toggleMenu()}>Free&nbsp;Lance</a></li>
+    <li><a href="/freelance" on:click={() => toggleMenu()}>Free Lance</a></li>
     <li><a href="/services" on:click={() => toggleMenu()}>Services</a></li>
     <li><a href="/about" on:click={() => toggleMenu()}>About</a></li>
   </ul>

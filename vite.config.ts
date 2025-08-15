@@ -7,11 +7,7 @@ export default defineConfig({
 	server: {
 		host: true, 
 		port: 5174,
-		allowedHosts: ['larrystokes.com'],
-		hmr: {
-			clientPort: 443,
-			host: 'larrystokes.com'
-		}
+		allowedHosts: ['larrystokes.com']
 	},
 	plugins: [tailwindcss(), sveltekit(), imagetools()],
 	test: {
