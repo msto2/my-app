@@ -1,7 +1,7 @@
 <script>
   import { onMount, onDestroy } from 'svelte';
 
-  let images = [
+  let baseImages = [
     "/images/freelance/img1.jpg", "/images/freelance/img2.jpg", "/images/freelance/img3.jpg",
     "/images/freelance/img4.jpg", "/images/freelance/img5.jpg", "/images/freelance/img6.jpg",
     "/images/freelance/B42Q3197.JPG", "/images/freelance/B42Q3200.JPG", "/images/freelance/B42Q3206.JPG",
@@ -10,6 +10,9 @@
     "/images/freelance/signal-2025-08-14-18-01-45-296-1.jpg", "/images/freelance/signal-2025-08-14-18-07-53-550.jpg",
     "/images/freelance/signal-2025-08-14-18-08-01-048.jpg"
   ];
+  
+  // Double the images for seamless looping
+  let images = [...baseImages, ...baseImages];
 
   let track; // The DOM element that scrolls horizontally
   let startX = 0; // Starting X position for dragging
@@ -117,9 +120,7 @@
 
   // Lifecycle: when component mounts
   onMount(() => {
-    // Clone the content to allow seamless looping
-    const clone = track.innerHTML;
-    track.innerHTML += clone;
+    // Set initial scroll position to start of second half
     track.scrollLeft = track.scrollWidth / 4;
 
     // Main animation loop for image panning and looping
@@ -173,7 +174,7 @@
   on:mouseleave={onMouseLeave}
 >
   <div bind:this={track} class="track">
-    {#each images as img (img)}
+    {#each images as img, i (i)}
       <div class="image-wrapper">
         <img src={img} alt="Freelance photography" loading="lazy" draggable="false" />
       </div>

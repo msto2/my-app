@@ -29,7 +29,7 @@
       <div class="space-y-4">
         <div>
           <h4 class="font-semibold text-[var(--text)] mb-2">Phone Numbers</h4>
-          <p class="text-[var(--muted)]">724-378-3236 & 412-759-3311</p>
+          <p class="text-[var(--muted)]">724-378-3236 | 412-759-3311</p>
         </div>
         <div class="mt-4">
           <h4 class="font-semibold text-[var(--text)] mb-2">Email</h4>

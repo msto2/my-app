@@ -4,6 +4,7 @@
       "Bash(cat:*)"
     ],
     "deny": [],
-    "ask": []
+    "ask": [],
+    "defaultMode": "acceptEdits"
   }
 }
