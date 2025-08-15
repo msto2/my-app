@@ -4,9 +4,11 @@
   let images = [
     "/images/freelance/img1.jpg", "/images/freelance/img2.jpg", "/images/freelance/img3.jpg",
     "/images/freelance/img4.jpg", "/images/freelance/img5.jpg", "/images/freelance/img6.jpg",
-    "/images/freelance/A03I8063.JPG", "/images/freelance/B42Q3197.JPG", 
-    "/images/freelance/B42Q3200.JPG", "/images/freelance/B42Q3206.JPG",
-    "/images/freelance/signal-2024-12-19-15-05-51-346-2.jpg", "/images/freelance/signal-2024-12-24-12-11-29-229-6.jpg"
+    "/images/freelance/B42Q3197.JPG", "/images/freelance/B42Q3200.JPG", "/images/freelance/B42Q3206.JPG",
+    "/images/freelance/signal-2024-12-19-15-05-51-346-2.jpg", "/images/freelance/signal-2024-12-24-12-11-29-229-6.jpg",
+    "/images/freelance/signal-2025-08-14-17-59-03-976.jpg", "/images/freelance/signal-2025-08-14-17-59-22-286.jpg",
+    "/images/freelance/signal-2025-08-14-18-01-45-296-1.jpg", "/images/freelance/signal-2025-08-14-18-07-53-550.jpg",
+    "/images/freelance/signal-2025-08-14-18-08-01-048.jpg"
   ];
 
   let track; // The DOM element that scrolls horizontally
