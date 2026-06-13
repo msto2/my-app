@@ -1,3 +1,12 @@
+<script>
+  import { getImage } from '$lib/images';
+
+  // Compressed, responsive WebP variants generated at build time.
+  const weddings = getImage('/images/weddings/chris wed 200.jpg');
+  const sports = getImage('/images/sports/img4.jpg');
+  const freelance = getImage('/images/freelance/img3.jpg');
+</script>
+
 <main class="home">
   <section class="hero">
     <h1>LA Stokes Photography</h1>
@@ -8,17 +17,17 @@
     <a class="highlight" href="/weddings">
       <h2>Weddings</h2>
       <p>Cinematic Storytelling</p>
-      <img src="\images\weddings\chris wed 200.jpg">
+      <img src={weddings.src} srcset={weddings.srcset} sizes="(max-width: 600px) 90vw, 400px" alt="Wedding photography" loading="lazy" />
     </a>
     <a class="highlight" href="/sports">
       <h2>Sports</h2>
       <p>In-Game Action</p>
-      <img src="/images/sports/img4.jpg">
+      <img src={sports.src} srcset={sports.srcset} sizes="(max-width: 600px) 90vw, 400px" alt="Sports photography" loading="lazy" />
     </a>
     <a class="highlight" href="/freelance">
       <h2>Freelance</h2>
       <p>Versatile, Creative Work</p>
-      <img src="\images\freelance\img3.jpg">
+      <img src={freelance.src} srcset={freelance.srcset} sizes="(max-width: 600px) 90vw, 400px" alt="Freelance photography" loading="lazy" />
     </a>
   </section>
   <!-- Contact Information -->

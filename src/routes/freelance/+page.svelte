@@ -1,7 +1,8 @@
 <script>
   import { onMount, onDestroy } from 'svelte';
+  import { getImages } from '$lib/images';
 
-  let baseImages = [
+  let baseImagePaths = [
     "/images/freelance/img1.jpg", "/images/freelance/img2.jpg", "/images/freelance/img3.jpg",
     "/images/freelance/img4.jpg", "/images/freelance/img5.jpg", "/images/freelance/img6.jpg",
     "/images/freelance/B42Q3197.JPG", "/images/freelance/B42Q3200.JPG", "/images/freelance/B42Q3206.JPG",
@@ -10,7 +11,10 @@
     "/images/freelance/signal-2025-08-14-18-01-45-296-1.jpg", "/images/freelance/signal-2025-08-14-18-07-53-550.jpg",
     "/images/freelance/signal-2025-08-14-18-08-01-048.jpg"
   ];
-  
+
+  // Compressed, responsive WebP variants generated at build time.
+  let baseImages = getImages(baseImagePaths);
+
   // Double the images for seamless looping
   let images = [...baseImages, ...baseImages];
 
@@ -101,6 +105,8 @@
   // Starts autoplay scrolling
   function play() {
     if (isPlaying) return;
+    // Don't auto-scroll on mobile/portrait — a tap shouldn't start the carousel.
+    if (window.matchMedia('(orientation: portrait)').matches) return;
     isPlaying = true;
     advance(); // Begin advancing frames
   }
@@ -176,7 +182,14 @@
   <div bind:this={track} class="track">
     {#each images as img, i (i)}
       <div class="image-wrapper">
-        <img src={img} alt="Freelance photography" loading="lazy" draggable="false" />
+        <img
+          src={img.src}
+          srcset={img.srcset}
+          sizes="(orientation: portrait) 60vmin, 50vmin"
+          alt="Freelance photography"
+          loading="lazy"
+          draggable="false"
+        />
       </div>
     {/each}
   </div>

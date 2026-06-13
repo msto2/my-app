@@ -9,7 +9,13 @@ export default defineConfig({
 		port: 5174,
 		allowedHosts: ['larrystokes.com']
 	},
-	plugins: [tailwindcss(), sveltekit(), imagetools()],
+	plugins: [
+		tailwindcss(),
+		sveltekit(),
+		// Case-insensitive include so uppercase-extension photos (e.g. *.JPG) are
+		// also optimized; imagetools' default matcher is lowercase-only.
+		imagetools({ include: /^[^?]+\.(avif|gif|heif|jpe?g|png|tiff|webp)(\?.*)?$/i })
+	],
 	test: {
 		projects: [
 			{

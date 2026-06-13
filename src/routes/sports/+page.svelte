@@ -1,7 +1,8 @@
 <script>
   import { onMount, onDestroy } from 'svelte';
+  import { getImages } from '$lib/images';
 
-  let images = [
+  let imagePaths = [
     "/images/img1a.jpg", "/images/img2.jpg", "/images/img3.jpg",
     "/images/img4.jpg", "/images/img5.jpg", "/images/img6.jpg", "/images/img7.jpg",
     "/images/img8.jpg", "/images/img9.jpg", "/images/img10.jpg", "/images/img11.jpg",
@@ -18,6 +19,9 @@
     "/images/sports/img14.jpg", "/images/sports/img15.jpg", "/images/sports/img16.jpg", "/images/sports/img17.jpg",
     "/images/sports/img18.jpg", "/images/sports/img19.jpg", "/images/sports/CM4H9468.JPG"
   ];
+
+  // Compressed, responsive WebP variants generated at build time.
+  let images = getImages(imagePaths);
 
   let track; // The DOM element that scrolls horizontally
   let startX = 0; // Starting X position for dragging
@@ -106,6 +110,8 @@
   // Starts autoplay scrolling
   function play() {
     if (isPlaying) return;
+    // Don't auto-scroll on mobile/portrait — a tap shouldn't start the carousel.
+    if (window.matchMedia('(orientation: portrait)').matches) return;
     isPlaying = true;
     advance(); // Begin advancing frames
   }
@@ -180,9 +186,16 @@
   on:mouseleave={onMouseLeave}
 >
   <div bind:this={track} class="track">
-    {#each images as img (img)}
+    {#each images as img (img.src)}
       <div class="image-wrapper">
-        <img src={img} alt="Sports photography" loading="lazy" draggable="false" />
+        <img
+          src={img.src}
+          srcset={img.srcset}
+          sizes="(orientation: portrait) 60vmin, 50vmin"
+          alt="Sports photography"
+          loading="lazy"
+          draggable="false"
+        />
       </div>
     {/each}
   </div>
