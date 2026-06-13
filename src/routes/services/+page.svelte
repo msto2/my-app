@@ -11,7 +11,7 @@
     <h2 class="text-2xl font-semibold mb-6 text-[var(--accent)] text-center">Weddings</h2>
 
     <div class="highlight p-6 rounded-lg mb-6 transition-all">
-      <h3 class="text-xl font-bold mb-2">1. Basic Wedding Package – <span class="text-[var(--muted)]">$1,000</span></h3>
+      <h3 class="text-xl font-bold mb-2">1. Classic Wedding Package – <span class="text-[var(--muted)]">$1,000</span></h3>
       <p class="text-[var(--muted)] mb-2">Perfect for small weddings or elopements.</p>
       <ul class="list-disc list-inside ml-4 text-[var(--text)]">
         <li>Up to 8 hours of coverage</li>
@@ -21,7 +21,7 @@
     </div>
 
     <div class="highlight p-6 rounded-lg mb-6 transition-all">
-      <h3 class="text-xl font-bold mb-2">2. Classic Wedding Package – <span class="text-[var(--muted)]">$1,800</span></h3>
+      <h3 class="text-xl font-bold mb-2">2. Deluxe Wedding Package – <span class="text-[var(--muted)]">$1,800</span></h3>
       <p class="text-[var(--muted)] mb-2">A full day of memories captured from start to finish.</p>
       <ul class="list-disc list-inside ml-4 text-[var(--text)]">
         <li>Up to 8 hours of coverage</li>
